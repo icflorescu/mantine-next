@@ -1,0 +1,10 @@
+.img {
+  width: rem(16px);
+  height: rem(16px);
+  filter: grayscale(100%);
+  transition: all 0.2s;
+}
+
+.opened {
+  filter: none;
+}

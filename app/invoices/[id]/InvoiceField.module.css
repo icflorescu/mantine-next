@@ -1,0 +1,6 @@
+.root {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(4px);
+  margin-top: rem(4px);
+}

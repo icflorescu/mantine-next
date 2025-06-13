@@ -1,0 +1,23 @@
+.root {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: var(--header-height);
+  background: alpha(var(--mantine-color-body), 85%);
+  backdrop-filter: blur(rem(5px));
+  border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-5));
+}
+
+.title {
+  font-size: 0;
+  width: rem(32px);
+  overflow: hidden;
+
+  @mixin larger-than 520px {
+    width: auto;
+  }
+}
+
+.logo {
+  height: rem(32px);
+}

@@ -1,0 +1,19 @@
+.root {
+  --header-height: rem(64px);
+  --nav-width: rem(240px);
+  --max-nav-width: rem(300px);
+}
+
+.content {
+  min-height: calc(100dvh - var(--header-height));
+  @mixin larger-than $mantine-breakpoint-sm {
+    margin-left: calc(var(--nav-width) + var(--mantine-spacing-md));
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  padding-block: var(--mantine-spacing-md);
+}

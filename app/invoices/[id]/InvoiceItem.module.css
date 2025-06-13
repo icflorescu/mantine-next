@@ -1,0 +1,38 @@
+.root {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(4px);
+  margin-top: rem(4px);
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: rem(4px);
+  flex: 1;
+  align-items: flex-start;
+  @mixin larger-than $mantine-breakpoint-md {
+    flex-direction: row;
+  }
+}
+
+.field {
+  width: 100%;
+  @mixin larger-than $mantine-breakpoint-md {
+    flex: 0 0 rem(100px);
+    &.description {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.total {
+  color: var(--mantine-color-dimmed);
+  font-size: var(--mantine-font-size-sm);
+  line-height: rem(34px);
+  text-align: right;
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-4), var(--mantine-color-dark-4));
+  border-radius: var(--mantine-radius-sm);
+  padding-inline: rem(12px);
+  background: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
+}

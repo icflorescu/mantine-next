@@ -1,0 +1,14 @@
+.root {
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-5));
+  padding-block: var(--mantine-spacing-md);
+  font-size: var(--mantine-font-size-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @mixin larger-than $mantine-breakpoint-lg {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}

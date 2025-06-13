@@ -1,0 +1,15 @@
+.root {
+  height: rem(36px);
+  background: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-4), var(--mantine-color-dark-4));
+  border-radius: var(--mantine-radius-sm);
+  padding-inline: rem(4px);
+  &:focus-visible {
+    /* mimic mantine focus style */
+    outline: 2px solid var(--mantine-primary-color-filled);
+    outline-offset: rem(2px);
+  }
+  &:active {
+    background: light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+  }
+}

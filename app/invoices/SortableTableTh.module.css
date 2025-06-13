@@ -1,0 +1,33 @@
+.root {
+  cursor: pointer;
+  user-select: none;
+  @mixin hover {
+    background: alpha(var(--mantine-color-text), light-dark(5%, 10%));
+  }
+  &:active .content {
+    transform: translateY(1px);
+  }
+}
+
+.content {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: rem(4px);
+  margin-right: rem(-2px);
+}
+
+.sortedIcon {
+  transition: transform 0.2s;
+  &.desc {
+    transform: rotate(180deg);
+  }
+}
+
+.unsortedIcon {
+  color: var(--mantine-color-dimmed);
+}
+
+.label {
+  flex: 1;
+  white-space: nowrap;
+}

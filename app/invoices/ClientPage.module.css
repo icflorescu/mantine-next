@@ -1,0 +1,45 @@
+.scrollContainer {
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  border-radius: var(--mantine-radius-sm);
+}
+
+.scrollContainerInner {
+  max-height: calc(100vh - rem(340px));
+  @mixin larger-than $mantine-breakpoint-md {
+    max-height: calc(100vh - rem(250px));
+  }
+  @mixin larger-than $mantine-breakpoint-lg {
+    max-height: calc(100vh - rem(200px));
+  }
+}
+
+.scrollbar {
+  z-index: 3;
+}
+
+.tableHeader {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: rem(1px);
+    background: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  }
+}
+
+.selectWrapper {
+  --input-height: rem(32px);
+}
+
+.paginationControl:not(:first-child, :last-child) {
+  font-size: var(--mantine-font-size-sm);
+}
+
+.paginationControl:not(:first-child, :last-child),
+.paginationDots {
+  display: none;
+  @mixin larger-than $mantine-breakpoint-xs {
+    display: flex;
+  }
+}
