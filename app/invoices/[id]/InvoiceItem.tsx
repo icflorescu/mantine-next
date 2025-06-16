@@ -75,7 +75,7 @@ export function InvoiceItem({ provided, form, index, onTotalChange }: InvoiceIte
           key={form.key(`items.${index}.unit`)}
           {...form.getInputProps(`items.${index}.unit`)}
           data={unitOptions.data}
-          rightSection={unitOptions.isFetching && <Loader size="xs" />}
+          rightSection={unitOptions.isFetching && unitOpened && <Loader size="xs" />}
         />
         <NumberInput
           className={classes.field}

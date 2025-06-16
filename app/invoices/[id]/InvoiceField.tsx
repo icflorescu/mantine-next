@@ -59,7 +59,7 @@ export function InvoiceField({ provided, form, type, index }: InvoiceFieldsProps
         key={form.key(`${type}.${index}.name`)}
         {...form.getInputProps(`${type}.${index}.name`)}
         data={nameOptions.data}
-        rightSection={nameOptions.isFetching && <Loader size="xs" />}
+        rightSection={nameOptions.isFetching && nameOpened && <Loader size="xs" />}
       />
       <Autocomplete
         comboboxProps={{
@@ -72,7 +72,7 @@ export function InvoiceField({ provided, form, type, index }: InvoiceFieldsProps
         key={form.key(`${type}.${index}.value`)}
         {...form.getInputProps(`${type}.${index}.value`)}
         data={valueOptions.data}
-        rightSection={valueOptions.isFetching && <Loader size="xs" />}
+        rightSection={valueOptions.isFetching && valueOpened && <Loader size="xs" />}
       />
       <ActionIcon variant="light" size="input-sm" color="red" onClick={handleDeleteClick} title="Delete field">
         <IconTrash size={16} />
