@@ -12,7 +12,7 @@ export function Footer() {
         and
         <Box component="br" hiddenFrom="xs" /> released under the{' '}
         <Anchor
-          href="https://github.com/icflorescu/mantine-start/blob/main/LICENSE"
+          href="https://github.com/icflorescu/mantine-next/blob/main/LICENSE"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -41,7 +41,7 @@ export function Nav() {
             leftSection={<IconHeart size={16} strokeWidth={1.5} />}
           />
           <NavLink
-            href="https://github.com/icflorescu/mantine-start"
+            href="https://github.com/icflorescu/mantine-next"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.navLink}

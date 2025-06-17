@@ -58,7 +58,7 @@ export function Header({ containerSize, children }: HeaderProps) {
             </ActionIcon>
             <ActionIcon
               component="a"
-              href="https://github.com/icflorescu/mantine-start"
+              href="https://github.com/icflorescu/mantine-next"
               target="_blank"
               rel="noopener noreferrer"
               variant="transparent"
