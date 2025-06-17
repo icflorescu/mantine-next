@@ -19,5 +19,6 @@
 }
 
 .logo {
+  color: var(--mantine-color-text);
   height: rem(32px);
 }

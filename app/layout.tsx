@@ -16,8 +16,8 @@ import { TRPCClientProvider } from '~/lib/trpc/client';
 import classes from './layout.module.css';
 
 export const metadata: Metadata = {
-  title: 'Mantine Next tRPC',
-  description: 'The easiest way to get started with Mantine, Next.js, and tRPC.',
+  title: 'Mantine Next - The easiest way to get started with Mantine, Next.js and tRPC.',
+  description: 'The easiest way to get started with Mantine, Next.js and tRPC.',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 };
 

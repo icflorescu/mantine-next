@@ -1,0 +1,17 @@
+.border {
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.button {
+  max-width: 100%;
+  padding-inline: rem(10px);
+}
+
+.buttonLabel {
+  display: block;
+  padding-top: rem(10px);
+  font-family: var(--mantine-font-family-monospace);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
