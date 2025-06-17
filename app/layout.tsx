@@ -1,6 +1,7 @@
+// Import Mantine styles first
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
-
+// Then other stuff
 import { ColorSchemeScript, Container, mantineHtmlProps, MantineProvider, type ContainerProps } from '@mantine/core';
 import { ModalsProvider } from '@mantine/modals';
 import type { Metadata } from 'next';

@@ -1,6 +1,6 @@
 {
   "name": "mantine-next",
-  "description": "Mantine + Next.js + tRPC template",
+  "description": "Mantine + Next.js template",
   "version": "0.0.1",
   "author": {
     "name": "Ionut-Cristian Florescu",
